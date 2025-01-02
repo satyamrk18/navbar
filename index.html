@@ -1,63 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>navbar</title>
-    
-<style>
-    .navbar ul {
-         position: relative;
-         top:0px;
-         display: flex;
-         flex-wrap: wrap;
-       }
-       .navbar img {
-         height: 150px;
-         padding-left: 10px;
-         position: relative;
-         bottom: 10px;
-         left: 10px;
-       }
-       .navbar ul li {
-         padding: 10px;
-         display: flex;
-         align-items: center;
-       }
-       .navbar ul {
-         display: flex;
-         justify-content: center;
-         position: relative;
-         justify-content: space-evenly;
-         list-style-type: none;
-         color: #088179bd;
-         font-size: 25px;
-         font-family: "crimson Pro";
-         padding-top: 15px;
-         cursor: pointer;
-         transition: 0.3s;
-         font-weight: 600;
-       }
-       .navbar ul li:hover {
-         transition: 0.2s;
-         padding: 7px;
-         font-size: 27px;
-         text-decoration: underline;
-         text-underline-offset: 7px;
-         text-decoration-thickness: 3px;
-         color: #088178;
-       }
-   </style>
-</head>
-<body>
+
+    <style>
+      .navbar ul {
+        position: relative;
+        top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .navbar img {
+        height: 150px;
+        padding-left: 10px;
+        position: relative;
+        bottom: 10px;
+        left: 10px;
+      }
+      .navbar ul li {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .navbar ul {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        justify-content: space-evenly;
+        list-style-type: none;
+        color: #088179bd;
+        font-size: 25px;
+        font-family: "crimson Pro";
+        padding-top: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: 600;
+      }
+      .navbar ul li:hover {
+        transition: 0.2s;
+        padding: 7px;
+        font-size: 27px;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+        text-decoration-thickness: 3px;
+        color: #088178;
+      }
+      @media (min-width: 601px) and (max-width:800px) {
+.hamburger img 
+{
+  display:none;
+}
+.navbar ul 
+{
+  font-size:15px ;
+}
+      }
+@media (min-width: 601px) and (max-width:2000px) {
+.hamburger img 
+{
+  display:none;
+}
+}
+
+@media (max-width: 600px) {
+ .navbar{
+  display: none;
+ }
+ .hamburger img 
+ {
+  height: 100px;
+  width: 100px;
+ }
+ 
+}
+
+    </style>
+  </head>
+  <body>
     <div class="navbar">
-        <ul>
-          <li>ABOUT</li>
-          <li>SERVICES</li>
-          <img src="logo.png" />
-          <li>GALLERY</li>
-          <li>CONTACT</li>
-        </ul>
-      </div>
-</body>
+      <ul>
+        <li>ABOUT</li>
+        <li>SERVICES</li>
+        <img src="logo.png" />
+        <li>GALLERY</li>
+        <li>CONTACT</li>
+      </ul>
+    </div>
+    <div class="hamburger"><img src="burger_menu.png" /></div>
+  </body>
 </html>
